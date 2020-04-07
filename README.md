@@ -8,7 +8,7 @@ The mobile application shows also, the total cases in the globe, and a detailed 
 Thanks to the reports and data provided by [worldmeters](https://www.worldometers.info/coronavirus/) and NovalCOVID API, the application simplifies and provide data about the spreading of the corona virus in the local region of the users, reports such as : how many active cases, new daily confirmed cases, new deaths and how many recovered one.
 
 
-## [Download The App from here ](https://github.com/DeepakChhipa1999/Covid-19/blob/master/app/release/app-release.apk)
+## [Download The App from here ](https://raw.githubusercontent.com/DeepakChhipa1999/Covid-19/master/app/release/app-release.apk)
 
 ## Screenshots
 
