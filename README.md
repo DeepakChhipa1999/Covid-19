@@ -29,7 +29,7 @@ width="250"
 ## How to use it?
 Clone this repository and import into **Android Studio**
 ```bash
-git clone https://github.com/islem19/CoronaCovid19.git
+git clone https://github.com/DeepakChhipa1999/Covid-19.git
 ```
 
 ## Permissions
