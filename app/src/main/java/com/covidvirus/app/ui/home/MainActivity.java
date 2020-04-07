@@ -58,7 +58,7 @@ public class MainActivity extends BaseActivity<MainViewModel> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        initAdMob();
+       // initAdMob();
         DataManager.getInstance().setRunCount();
         Log.d(TAG, "onCreate: count"+DataManager.getInstance().getRunCount());
         if (DataManager.getInstance().getDefaultCountry() == null) {
@@ -70,7 +70,7 @@ public class MainActivity extends BaseActivity<MainViewModel> {
         mainTabLayout.setupWithViewPager(mainPager, true);
     }
 
-    private void initAdMob(){
+ /*   private void initAdMob(){
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -111,7 +111,7 @@ public class MainActivity extends BaseActivity<MainViewModel> {
             });
         }
     }
-
+*/
 
     private void setMainPagerAdapter() {
         mainAdapter = new MainPagerAdapter(getSupportFragmentManager(), 0);
