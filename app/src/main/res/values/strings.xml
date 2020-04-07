@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name" translatable="false">Corona Live Update</string>
+    <string name="total_cases_title">Total cases</string>
+    <string name="active_cases_title">Active cases</string>
+    <string name="today_cases_title">Today cases</string>
+    <string name="total_death_title">Total deaths</string>
+    <string name="today_death_title">Today deaths</string>
+    <string name="total_recover_title">Total recovers</string>
+    <string name="global_fragment">Global State</string>
+    <string name="countries_fragment">Countries State</string>
+    <string name="default_country">Algeria</string>
+    <string name="details">Details</string>
+
+    <!-- About section-->
+    <string name="about">About</string>
+    <string name="version" translatable="false">v1.0.1</string>
+    <string name="developed">Developed By</string>
+    <string name="first_dev">Deepak Chhipa (deepakchhipa1999@gmail.com)</string>
+    <string name="second_dev">Dilip Jain(dilipjain0504@gmail.com)</string>
+    <string name="credit">Source : worldometers.info/coronavirus \n provided by NovelCOVID Api</string>
+    <string name="banner_key">ca-app-pub-4756765024373725/2482217902</string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="message_user_unauthorized">You already login into another device</string>
+    <string name="msg_unexpected_error">Cannot proceed your request, please try again later</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirmed_case_count">Confirmed : %1$s</string>
+    <string name="recovered_case_count">Recovered : %1$s</string>
+    <string name="death_case_count">Deaths : %1$s</string>
+    <string name="information_last_update">Last update %1$s</string>
+    <string name="information_location_total_case"> "Total %1$s cases on China and %2$s on the other location"</string>
+    <string name="visitable_recycler_adapter_unregistered_message">
+        Resource %1$s.xml not registered on VisitableRecyclerAdapter!
+    </string>
+    <string name="type_city_province_region">Type country or province region …</string>
+    <string name="case_reported">Cases reported</string>
+    <string name="tap_on_statistic">Tap on statistic on the right side for more information\nData source : https://covid19.mathdro.id/api/</string>
+    <string name="total_case">Total Case</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="recovered">Recovered</string>
+    <string name="deaths">Deaths</string>
+    <string name="covid19">COVID19</string>
+    <string name="general_error_title">Snap!</string>
+    <string name="general_error_description">Sorry something went wrong</string>
+    <string name="connection_error_title">Couldn\'t connect to Internet</string>
+    <string name="connection_error_description">There may be a problem with your connection</string>
+    <string name="retry">Retry</string>
+    <string name="zero">0</string>
+    <string name="feedback_url" translatable="false">https://docs.google.com/forms/d/11_o0SNMYpFqWv2kJkMnPQd2YTcJJYDwc0vlEPD_BmfM/edit</string>
+    <string name="feedback">Feedback</string>
+    <string name="daily_updates">Daily Updates</string>
+    <string name="show_graph">Show Graph</string>
+    <string name="pinch_zoom">Pinch to zoom in or zoom out data</string>
+    <string name="per_country">Per Country Data</string>
+    <string name="source">Source : %1$s</string>
+    <string name="case_per_province_chart">Per Province Case Graph</string>
+    <string name="case_daily_chart">Daily Case Graph</string>
+    <string name="case_daily">Daily Case</string>
+    <string name="indonesia_daily_info">Confirmed, recovered and death are total number</string>
+    <string name="new_case">New Case</string>
+    <string name="new_case_case_count">New Case : %1$s</string>
+    <string name="check_update">Check for update</string>
+    <string name="update_url" translatable="false">https://drive.google.com/open?id=1MaO9mIKWCFWSK2lFtEfKge1z8XDesi8n</string>
+    <string name="day_on">(Day #%1$s)</string>
+    <string name="country_indonesia">Indonesia</string>
+
+    <string name="unpin">Unpin</string>
+    <string name="pinned_not_set">Pinned location is not set</string>
+    <string name="how_to_pin">Open map, tap and hold to country item, remove and add this widget once more</string>
+    <string name="source_data">Data source : https://covid19.mathdro.id/</string>
+    <string name="update_widget_start">Updating widget data …</string>
+    <string name="update_widget_success">Updating widget data successful</string>
+    <string name="update_widget_fail">Updating widget data failed</string>
+    <string name="total_chart_info">Total Line Chart shows the total number of confirmed and recovered case over period of time</string>
+
+
+    <string name="delta_chart_info">Delta Line Chart shows the increment of confirmed and recovered case over period of time</string>
+    <string name="total" translatable="false">Total</string>
+    <string name="delta" translatable="false">Delta</string>
+    <string name="show_data">Show data</string>
+    <string name="google_api_key">AIzaSyCa7DPWDZsUSLbRW-Z3vm6UjJriUmoHtYo</string>
+    <string-array name="detail_item_menu">
+        <item>Pin to Dashboard</item>
+    </string-array>
+
+
+</resources>

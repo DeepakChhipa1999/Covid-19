@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="total_cases_title">Nbr de cas</string>
+    <string name="active_cases_title">Cas actifs</string>
+    <string name="today_cases_title">Cas du jour</string>
+    <string name="total_death_title">Nbr de décès</string>
+    <string name="today_death_title">Décès du jour</string>
+    <string name="total_recover_title">Cas récupérés</string>
+    <string name="global_fragment">État global</string>
+    <string name="countries_fragment">État des pays</string>
+    <string name="default_country">Algérie</string>
+    <string name="details">Détails</string>
+
+    <!-- About section-->
+    <string name="about">à propos</string>
+    <string name="developed">Développé par</string>
+    <string name="first_dev">Abdelkader SELLAMI (sellislem@gmail.com)</string>
+    <string name="second_dev">Billel BOUMESSAIDIA (billel.bmsd@gmail.com)</string>
+    <string name="credit">Source: worldometers.info/coronavirus \n fourni par NovalCOVID API</string>
+
+</resources>

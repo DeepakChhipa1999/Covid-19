@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="total_cases_title">مجموع الحالات</string>
+    <string name="active_cases_title">الحالات النشطة</string>
+    <string name="today_cases_title">حالات اليوم</string>
+    <string name="total_death_title">مجموع الوفيات</string>
+    <string name="today_death_title">وفيات اليوم</string>
+    <string name="total_recover_title">الحالات المتماثلة للشفاء</string>
+    <string name="global_fragment">الحالات في العالم</string>
+    <string name="countries_fragment">الحالات في الدول الاخرى</string>
+    <string name="default_country">الجزائر</string>
+    <string name="details">تفاصيل</string>
+
+    <!-- About section-->
+    <string name="about">حول</string>
+    <string name="developed">طور من طرف</string>
+    <string name="first_dev">عبد القادر سلامي (sellislem@gmail.com)</string>
+    <string name="second_dev">بلال بومسعدية (billel.bmsd@gmail.com)</string>
+    <string name="credit">المصدر:  worldometers.info/coronavirus مقدمة من NovalCOVID API</string>
+
+
+</resources>

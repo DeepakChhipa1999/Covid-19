@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_rounded_grey"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:id="@+id/relative_layout"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/country_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorHintTextLight"
+        android:text="India"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true" />
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart_country_click"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_below="@id/country_title"
+        android:layout_centerHorizontal="true"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainbt_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pie_chart_country_click"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/cases_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:src="@drawable/checklist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <LinearLayout
+        android:id="@+id/cases_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cases_img"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/caseValue"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorHintTextLight"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/total_cases_title"
+            android:textColor="@color/colorTotalCases"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <ImageView
+        android:id="@+id/death_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:src="@drawable/cemetery"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cases_description"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/death_img">
+
+        <TextView
+            android:id="@+id/deathValue"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorHintTextLight"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="@string/total_death_title"
+            android:gravity="center"
+            android:textColor="@color/colorDeathCases"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/recover_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:src="@drawable/ic_recover"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cases_description"/>
+
+    <LinearLayout
+        android:id="@+id/layout_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/recover_img">
+
+        <TextView
+            android:id="@+id/recove_value"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorHintTextLight"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="@string/total_recover_title"
+            android:gravity="center"
+            android:textColor="@color/colorRecoveredCases"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/caseItem"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/constrainbt_layout"
+        layout="@layout/cases_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <include
+        android:layout_marginTop="15dp"
+        android:id="@+id/deathItem"
+        layout="@layout/death_item"
+        android:layout_below="@+id/caseItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <include
+        android:id="@+id/recoverItem"
+        layout="@layout/recover_item"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/deathItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+<!--
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_tabs"
+        android:paddingStart="5sp"
+        android:text="@string/details"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorHintText"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+-->
+
+
+
+<!--    <ImageButton
+        android:id="@+id/aboutCancelBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/about_close_bt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />-->
+
+</RelativeLayout>
+</ScrollView>

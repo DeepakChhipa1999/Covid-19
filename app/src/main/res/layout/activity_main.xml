@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_background"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.MainActivity">
+
+    <LinearLayout
+        android:background="@color/color_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/profileContainer"
+        android:background="@color/color_background"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:minHeight="220dp"
+        android:padding="5dp"
+        />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/color_background"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_background"
+                android:orientation="vertical">
+              <!--  <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="Global Data"
+                    app:titleTextColor="@color/colorHintTextLight"
+                    app:titleMarginStart="140dp"
+                    app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/bg_tabs"/>-->
+            <com.google.android.material.tabs.TabLayout
+                android:background="@drawable/bg_tabs"
+                app:tabTextColor="@color/colorHintText"
+                android:id="@+id/mainTabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabSelectedTextColor="@color/color_death" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:background="@color/color_background"
+                android:id="@+id/mainPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|bottom"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:background="@color/color_background"
+            android:id="@+id/mainBanner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_key">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
