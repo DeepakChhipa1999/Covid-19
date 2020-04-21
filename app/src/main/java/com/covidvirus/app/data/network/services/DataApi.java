@@ -11,13 +11,13 @@ import retrofit2.http.Path;
 
 public interface DataApi {
 
-    @GET("/all")
+    @GET("all")
     Call<GlobalDataModel> getGlobalData();
 
-    @GET("/countries")
+    @GET("countries")
     Call<List<CountryDataModel>> getAllData();
 
-    @GET("/countries/{country}")
+    @GET("countries/{country}")
     Call<CountryDataModel> getDataByCountry(@Path("country") String country);
 
 }

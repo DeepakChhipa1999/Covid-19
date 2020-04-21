@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class DataService {
-    private static final String BASE_URL = "https://corona.lmao.ninja";
+    private static final String BASE_URL = "https://corona.lmao.ninja/v2/";
     private DataApi mDataApi;
 
     private static DataService mInstance;
